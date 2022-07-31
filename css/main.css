@@ -35,6 +35,22 @@ body {
 
 /* Utilities */
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    outline: 0;
+    outline-offset: 0;
+}
+
 img {
     display: block;
     max-width: 100%;
@@ -156,6 +172,9 @@ footer {
 
 .hero {
     text-align: center;
+    /* padding-top: 94px; */
+    padding-bottom: 94px;
+    /* outline: 1px solid yellow; */
 }
 
 .hero .button {
@@ -180,18 +199,20 @@ footer {
 
 /* main */
 .section {
-    padding-top: 94px;
+
     padding-bottom: 94px;
+    /* outline: 1px solid yellow; */
 
 }
 
 .section.combi-top {
-    padding-bottom: 0;
+    padding-top: 94px;
 }
 
+/*
 .section.combi-bottom {
     padding-top: 0;
-}
+} */
 
 /* наша команда */
 /* team-galery */
@@ -214,10 +235,11 @@ footer {
 }
 
 .gallery-flex-big .wrapper {
-    padding-top: var(--gallery-text-wrapper-padding-top-bottom);
-    padding-bottom: var(--gallery-text-wrapper-padding-top-bottom);
-    padding-left: var(--gallery-text-wrapper-padding-left-right);
-    padding-right: var(--gallery-text-wrapper-padding-left-right);
+    text-align: center;
+    padding-top: var(--gallery-big-text-wrapper-padding-top-bottom);
+    padding-bottom: var(--gallery-big-text-wrapper-padding-top-bottom);
+    padding-left: var(--gallery-big-text-wrapper-padding-left-right);
+    padding-right: var(--gallery-big-text-wrapper-padding-left-right);
 }
 
 
@@ -231,15 +253,14 @@ footer {
 .alternate h3 {
     font-weight: 500;
     font-size: 16px;
+    margin-top: 0px;
+    margin-bottom: 10px;
 }
 
 .alternate p {
     font-size: 16px;
-}
-
-.alternate h3 {
-    margin-top: 30px;
-    margin-bottom: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .alternate ul {
@@ -269,7 +290,7 @@ footer {
 }
 
 .features ul {
-    margin-bottom: 94px;
+    /* margin-bottom: 94px; */
     display: flex;
 }
 
@@ -293,6 +314,7 @@ footer {
 
 .button-gallery {
     padding: 6px 22px;
+    margin-right: 8px;
 }
 
 .button.primary {
